@@ -1,0 +1,10 @@
+[package]
+description = "Add automatic updating to your Bevy game"
+edition = "2021"
+license = "Apache-2.0"
+name = "bevy_auto_update"
+readme = "README.md"
+repository = "https://github.com/PortalCloudInc/bevy_auto_update"
+version = "0.0.1"
+
+[dependencies]

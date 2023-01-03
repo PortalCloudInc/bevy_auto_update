@@ -1,2 +1,5 @@
 # bevy_auto_update
-Easily add auto update to your Bevy game
+
+Easily add automatic updating to your Bevy game
+
+Coming soon...

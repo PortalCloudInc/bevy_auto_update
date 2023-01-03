@@ -1,14 +1,12 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+pub mod plugin;
+pub mod resources;
+pub(crate) mod systems;
+pub mod updater;
+pub mod updater_dry_run;
+pub mod updater_github;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+pub mod prelude {
+    pub use crate::{
+        plugin::AutoUpdatePlugin, resources::UpdateStatus, updater::Updater, updater_github::GitHub,
+    };
 }
